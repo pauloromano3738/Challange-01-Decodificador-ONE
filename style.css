@@ -1,0 +1,246 @@
+:root {
+  --background: #0b0c12;
+  --cor-enfase: #89e215;
+  --cor-texto-maior-contraste: #989ea6;
+  --cor-texto-menor-contraste: #363b47;
+  --cor-texto-menor-contraste-resultado: #c0c5cc;
+  --cor-texto-resultado: #ced3d9;
+  --cor-texto-botoes: #c0c5cc;
+  --cor-botaoes: #363b47;
+  --cor-texto-botao-hover: #023401;
+  --background-resultado: #474d59;
+  --gradient: linear-gradient(180deg, #baf123 0%, #89e215 100%);
+}
+
+.light-theme {
+  --background: #ffebdc;
+  --cor-enfase: #d2550e;
+  --cor-texto-maior-contraste: #d2550e;
+  --cor-texto-menor-contraste: #3d3d3d;
+  --cor-texto-menor-contraste-resultado: #3d3d3d;
+  --cor-texto-resultado: #141414;
+  --cor-texto-botoes: #6e2e09;
+  --cor-botaoes: #ffb681;
+  --cor-texto-botao-hover: #6e2e09;
+  --background-resultado: #fff;
+  --gradient: linear-gradient(180deg, #fb9c57 0%, #d86220 100%);
+}
+
+body {
+  background: var(--background);
+}
+
+/* estilizando header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.light-mode {
+  margin-top: 30px;
+  width: 32px;
+  height: 32px;
+}
+
+.light-mode:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+/* estilizando main */
+
+main {
+  width: 1440px;
+}
+
+/* estilizando input de texto */
+
+.campo-texto {
+  margin-bottom: 265px;
+  margin-top: 80px;
+}
+
+#input-texto {
+  width: 680px;
+  height: 347px;
+  margin-left: 240px;
+  border: 0px;
+  background: none;
+  font-family: "Poppins";
+  font-size: 32px;
+  vertical-align: top;
+  resize: none;
+  text-transform: lowercase;
+}
+
+#input-texto::placeholder,
+#input-texto {
+  color: var(--cor-enfase);
+  line-height: 150%;
+}
+
+#input-texto:focus {
+  outline: none;
+}
+
+/* estilizando informação */
+
+.informacao {
+  height: 16px;
+  margin-left: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.texto-padrao1 {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: var(--cor-texto-menor-contraste);
+  margin-left: 8px;
+  line-height: 150%;
+}
+
+/* estilizando botões */
+
+.botoes {
+  height: 72px;
+  margin-top: 16px;
+  margin-left: 240px;
+}
+
+.botao-criptografar,
+.botao-descriptografar {
+  width: 328px;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 24px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--cor-texto-botoes);
+}
+
+.botao-criptografar {
+  margin-right: 24px;
+  background: var(--cor-botaoes);
+}
+
+.botao-descriptografar {
+  background: var(--cor-botaoes);
+}
+
+.botao-criptografar:hover,
+.botao-descriptografar:hover {
+  color: var(--cor-texto-botao-hover);
+  background: var(--gradient);
+}
+
+/* estilizando resultado */
+
+.resultado {
+  display: flex;
+  background: var(--background-resultado);
+  width: 400px;
+  height: 840px;
+  border-radius: 32px;
+}
+
+.resultado div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px;
+  width: 336px;
+}
+
+.ilustracao {
+  margin: 0px 32px 32px 32px;
+}
+
+.texto-mensagem {
+  font-family: "Poppins";
+  color: var(--cor-texto-resultado);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 120%;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+  text-align: center;
+}
+
+.texto-padrao2 {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Roboto";
+  color: var(--cor-texto-menor-contraste-resultado);
+  line-height: 150%;
+}
+
+#resultado-convertido {
+  display: none;
+  border: 0px;
+  margin-top: 40px;
+  width: 80%;
+  height: 100%;
+  background: none;
+  font-family: "Poppins";
+  color: var(--cor-enfase);
+  text-align: center;
+  font-size: 32px;
+  resize: none;
+}
+
+.botao-copiar {
+  display: none;
+  border: none;
+  border-radius: 10px;
+  padding: 24px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--cor-botaoes);
+  color: var(--cor-texto-botoes);
+  position: relative;
+  bottom: 40px;
+}
+
+.botao-copiar:hover {
+  background: var(--gradient);
+  color: var(--cor-texto-botao-hover);
+}
+
+/* flexbox */
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.resultado {
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+}

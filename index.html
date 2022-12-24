@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="flexbox">
+        <header>
+            <img class="logo" src="./svg/logoVerde.svg" alt="Logo da Alura">
+            <img class="light-mode" src="./svg/lightmode.svg">
+        </header>
+
+        <main>
+            <div class="principal">
+                <section class="campo-texto">
+                    <textarea id="input-texto" placeholder="Dígite seu texto" type="text" autofocus name="input"></textarea>
+                </section>
+
+                <div class="informacao">
+                    <img class="atencao" src="./svg/atencaoVerde.svg" alt="Ícone de atenção">
+                    <p class="texto-padrao1">Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <section class="botoes">
+                    <input class="botao-criptografar" type="button" value="criptografar">
+                    <input class="botao-descriptografar" type="button" value="descriptografar">
+                </section>
+            </div>
+            <section class="resultado">
+                <div class="">
+                    <img class="ilustracao" src="./svg/ilustracaoVerde.svg" alt="Ilustração">
+                    <p class="texto-mensagem">Nenhuma mensagem encontrada</p>
+                    <p class="texto-padrao2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <textarea id="resultado-convertido"></textarea>
+                    <input class="botao-copiar" type="button" value="copiar">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
