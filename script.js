@@ -80,7 +80,7 @@ var logo = document.querySelector(".logo");
 var atencao = document.querySelector(".atencao");
 var ilustracao = document.querySelector(".ilustracao");
 
-function teste() {
+function mudaTema() {
   document.body.classList.toggle("light-theme");
 
   if (document.body.classList.contains("light-theme")) {
@@ -103,4 +103,4 @@ var botaoCopia = document.querySelector(".botao-copiar");
 botaoCriptografa.onclick = criptografa;
 botaoDescriptografa.onclick = descriptografa;
 botaoCopia.onclick = copia;
-chave.onclick = teste;
+chave.onclick = mudaTema;
